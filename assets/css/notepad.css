@@ -1,0 +1,53 @@
+#notepad {
+	background-color: white;
+	padding: 0;
+	max-height: 620px;
+}
+#notepad-list {
+	padding: 0;
+}
+#note-items-container {
+	z-index: 1;
+	overflow-y: auto;
+	max-height: 550px;
+}
+.note-list-item {
+	position: relative;
+	border-right: 1px solid #E0E0E0;
+}
+.note-list-item, #notepad-field .row {
+	margin-left: 1em;
+}
+.note-list-item i {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: lightgrey;
+}
+#notepad-save-btn {
+	margin-left: 1em;
+}
+#notepad-field {
+	padding: 0;
+}
+#noteField {
+	height: 100%;
+}
+.notepad-heading {
+	background-color: #0990A8;
+	color: white;
+	padding: 0.5em;
+	margin: 0;
+}
+#notepad-container {
+	margin-top: 50px;
+}
+.note-title {
+	font-size: 1.2em;
+}
+.note-description {
+	font-size: 0.9em;
+}
+.note-date {
+	margin: 0;
+}

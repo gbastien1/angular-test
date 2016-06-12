@@ -1,0 +1,36 @@
+<div id="notepad-container" class="container" ng-controller="NotepadController">
+	<div class="row z-depth-1" id="notepad">
+
+		<div class="col s5" id="notepad-list">
+			<h4 class="notepad-heading">Your notes</h4>
+			<div id="note-items-container">
+				<div class="note-list-item" ng-repeat="note in notes" ng-mouseenter="showDeleteIcon($event)" ng-mouseleave="hideDeleteIcon($event)">
+					<div class="section" data-id="{{ $index }}">
+						<h6 class="note-title"><strong>{{ note.title }}</strong></h6>
+						<p class="note-description">{{ note.description }}</p>
+						<small class="note-date">{{ note.date }}</small>
+						<i class="material-icons delete-note-icon hide" ng-mouseenter="darkenDeleteIcon($event)" ng-mouseleave="lightenDeleteIcon($event)" ng-click="deleteCurrentNote($event)">delete</i>
+					</div>
+					<div class="divider"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s7" id="notepad-field">
+			<h4 class="notepad-heading">Write a note</h4>
+			<div class="row">
+				<div class="input-field col s11">
+		          	<input type="text" id="noteTitle" class="validate" rows="10" ng-model="noteTitle"></textarea>
+		          	<label for="noteTitle">Title</label>
+		        </div>
+				<div class="input-field col s11">
+		          	<textarea id="noteField" class="materialize-textarea" rows="10" ng-model="noteContent"></textarea>
+		          	<label for="noteField">Note</label>
+		        </div>
+		        <a class="btn" id="notepad-save-btn" ng-click="addNoteToJson()">Save</a>
+   
+	        </div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "angular-test",
+  "version": "1.0.0",
+  "description": "test with angularJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbastien1/angular-test.git"
+  },
+  "author": "Gabrielle",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/gbastien1/angular-test/issues"
+  },
+  "homepage": "https://github.com/gbastien1/angular-test#readme",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "jquery": "^3.0.0",
+    "materialize-css": "^0.97.6"
+  }
+}
